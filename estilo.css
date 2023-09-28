@@ -1,0 +1,49 @@
+body {
+    background: rgb(204,245,208);
+    background: radial-gradient(circle, rgba(204,245,208,1) 0%, rgba(255,234,180,1) 100%);
+    font-family: "Helvetica Neue", Arial, sans-serif;    
+}
+
+h1 {
+    color:#1f0c01;
+    font-weight: 550;
+    text-align: center;
+    padding-bottom: 30px;
+    text-transform: uppercase;    
+}
+
+.cards_container {
+    display: flex;
+    justify-content: space-evenly;
+    gap: 16px;                
+}
+
+.card { 
+    background-color: rgb(223, 197, 163);    
+    box-sizing: border-box;      
+    height: 250px;
+    width: fit-content;            
+}
+
+.tamanho {
+   height: 75%; 
+   display: block;    
+}
+
+.card p {
+    font-size: 18px;
+    text-align: center;
+    margin-top: 25px;
+}
+
+main {
+    margin-top: 30px;
+    margin-bottom: 30px;
+}
+
+@media (max-width: 800px) {
+    .cards_container {
+        flex-direction: column;
+        align-items: center;
+    }
+}
